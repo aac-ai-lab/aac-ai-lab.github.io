@@ -1,20 +1,15 @@
 # AAC AI Lab
 
-Site estático do laboratório — [https://aac-ai-lab.github.io/](https://aac-ai-lab.github.io/)
+Site do laboratório — [https://aac-ai-lab.github.io/](https://aac-ai-lab.github.io/)
 
-**Alternative Augmentative Communication and Artificial Intelligence Laboratory**
+Índice tipográfico dos projetos (pipeline CAA, roster de repositórios, nota do lab).
 
-Landing com abordagem, produtos ([Emotalk](https://github.com/aac-ai-lab/emotalk), [ConjugAI](https://aac-ai-lab.github.io/conjug.ai)) e catálogo de recursos abertos.
-
-## Desenvolvimento local
+## Local
 
 ```bash
-cd aac-ai-lab.github.io
 python3 -m http.server 5501
 ```
 
-Abrir [http://127.0.0.1:5501/](http://127.0.0.1:5501/).
-
 ## Publicação
 
-O ramo padrão de GitHub Pages deste repositório é `gh-pages`.
+Ramo `gh-pages`.
