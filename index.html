@@ -1,46 +1,312 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Título da Página</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link opcional para CSS externo -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AAC AI Lab — ferramentas e pesquisa em Comunicação Aumentativa e Alternativa com inteligência artificial.">
+  <meta property="og:title" content="AAC AI Lab">
+  <meta property="og:description" content="Ferramentas abertas que ampliam o que a CAA consegue fazer — conjugação, expansão telegráfica e comunicação assistiva.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aac-ai-lab.github.io/">
+  <title>AAC AI Lab — Ferramentas para CAA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Bem-vindo à Minha Página</h1>
-    </header>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#contact">Contato</a></li>
-        </ul>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#topo" aria-label="AAC AI Lab — início">
+        <span class="brand-mark" aria-hidden="true">AI</span>
+        <span class="brand-text">
+          <span class="brand-name">AAC AI Lab</span>
+          <span class="brand-sub">Communication &amp; AI</span>
+        </span>
+      </a>
 
-    <main>
-        <section id="home">
-            <h2>Seção Inicial</h2>
-            <p>Este é o conteúdo da seção inicial.</p>
-        </section>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-principal">
+        Menu
+      </button>
 
-        <section id="about">
-            <h2>Sobre</h2>
-            <p>Informações sobre esta página.</p>
-        </section>
+      <nav id="nav-principal" class="nav" aria-label="Principal">
+        <a href="#abordagem">Abordagem</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#contato">Contato</a>
+        <a class="btn btn-primary nav-cta" href="https://github.com/aac-ai-lab" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+    </div>
+  </header>
 
-        <section id="contact">
-            <h2>Contato</h2>
-            <p>Entre em contato conosco.</p>
-        </section>
-    </main>
+  <main id="conteudo">
+    <section id="topo" class="hero" aria-labelledby="hero-brand">
+      <div class="blob blob-a" aria-hidden="true"></div>
+      <div class="blob blob-b" aria-hidden="true"></div>
 
-    <footer>
-        <p>&copy; 2024 Todos os direitos reservados.</p>
-    </footer>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-brand" class="hero-brand">
+            AAC AI Lab
+            <span>Ferramentas para a sua CAA</span>
+          </h1>
+          <p class="hero-lead">
+            Construímos software aberto que se integra ao ecossistema de
+            Comunicação Aumentativa e Alternativa — conjugação verbal,
+            expansão de frases telegráficas e pranchas assistivas.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#produtos">Ver produtos</a>
+            <a class="btn btn-secondary" href="https://github.com/aac-ai-lab" target="_blank" rel="noopener noreferrer">Explorar no GitHub</a>
+          </div>
+        </div>
 
-    <script src="script.js"></script> <!-- Link opcional para JS externo -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-board">
+            <div class="tile accent"><strong>👤</strong>eu</div>
+            <div class="tile"><strong>🍽️</strong>querer</div>
+            <div class="tile accent"><strong>🍎</strong>maçã</div>
+            <div class="tile"><strong>🏠</strong>casa</div>
+            <div class="tile"><strong>🕒</strong>agora</div>
+            <div class="tile accent"><strong>💬</strong>falar</div>
+            <div class="tile"><strong>🤝</strong>ajuda</div>
+            <div class="tile"><strong>❤️</strong>gosto</div>
+            <div class="tile wide">
+              <span class="phrase">eu querer maçã</span>
+              <span class="arrow">→ Eu quero maçã.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="abordagem" class="section approach" aria-labelledby="abordagem-titulo">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="abordagem-titulo">Nossa abordagem à <em>CAA com IA</em></h2>
+          <p>
+            Em vez de substituir o software de CAA que as pessoas já usam,
+            criamos peças especializadas que entram no fluxo existente —
+            motores linguísticos, datasets e demos abertas.
+          </p>
+        </div>
+
+        <div class="pillars">
+          <article class="pillar">
+            <div class="pillar-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M8 7h8M8 12h8M8 17h5"/>
+                <rect x="3" y="3" width="18" height="18" rx="3"/>
+              </svg>
+            </div>
+            <h3>Integração sem atrito</h3>
+            <p>
+              Núcleos reutilizáveis (como o <a href="https://github.com/aac-ai-lab/conjug.ai"><u>ConjugAI</u></a>)
+              que podem viver dentro de pranchas, PWAs e pipelines sem trocar a interface do utilizador.
+            </p>
+          </article>
+
+          <article class="pillar">
+            <div class="pillar-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 3v18M3 12h18"/>
+                <circle cx="12" cy="12" r="9"/>
+              </svg>
+            </div>
+            <h3>Mais capacidade linguística</h3>
+            <p>
+              Flexão verbal, expansão telegráfica e conversão entre pictogramas,
+              emoji e texto natural — focados no português brasileiro.
+            </p>
+          </article>
+
+          <article class="pillar">
+            <div class="pillar-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19h16M6 16V8m4 8V5m4 11v-6m4 6V9"/>
+              </svg>
+            </div>
+            <h3>Aberto e auditável</h3>
+            <p>
+              Código, demos e datasets públicos no GitHub, para investigação,
+              clínicas e quem desenvolve tecnologia assistiva poder inspecionar e adaptar.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="produtos" class="section products" aria-labelledby="produtos-titulo">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="produtos-titulo">Nossos produtos</h2>
+          <p>
+            Software e recursos que ampliam o que pessoas e profissionais
+            conseguem fazer com CAA no dia a dia e na pesquisa.
+          </p>
+        </div>
+
+        <article class="product">
+          <div>
+            <span class="product-kicker">Aplicação CAA</span>
+            <h3>Emotalk</h3>
+            <p class="tagline">Prancha de comunicação com emoji e estrutura de frase</p>
+            <p class="desc">
+              Aplicação de Comunicação Aumentativa e Alternativa que combina
+              pictogramas/emoji, Colourful Semantics, Shape Coding, moldes de frase
+              e conjugação verbal via ConjugAI — instalável como PWA, com uso offline.
+            </p>
+            <ul class="feature-list">
+              <li>
+                <span class="dot" aria-hidden="true"></span>
+                <div>
+                  <strong>Fala e histórico</strong>
+                  <span>Síntese de voz em pt-BR/EN e registo das frases faladas</span>
+                </div>
+              </li>
+              <li>
+                <span class="dot" aria-hidden="true"></span>
+                <div>
+                  <strong>Estrutura gramatical</strong>
+                  <span>SVOMPT, papéis semânticos e ícones centrais (MINSPEAK)</span>
+                </div>
+              </li>
+              <li>
+                <span class="dot" aria-hidden="true"></span>
+                <div>
+                  <strong>Motor ConjugAI</strong>
+                  <span>Correção e flexão verbal ao falar frases telegráficas</span>
+                </div>
+              </li>
+            </ul>
+            <div class="product-actions">
+              <a class="btn btn-primary" href="https://github.com/aac-ai-lab/emotalk" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+            </div>
+          </div>
+          <div class="product-panel" aria-hidden="true">
+            <div>
+              <div class="panel-label">Exemplo na prancha</div>
+              <div class="panel-example">
+                👤 + 🍽️ + 🍎<br>
+                <span class="from">eu querer maçã</span><br>
+                <span class="to">Eu quero maçã.</span>
+              </div>
+            </div>
+            <p class="panel-meta">PWA · offline · pt-BR / EN</p>
+          </div>
+        </article>
+
+        <article class="product">
+          <div>
+            <span class="product-kicker">Motor linguístico</span>
+            <h3>ConjugAI</h3>
+            <p class="tagline">Conjugação verbal em português para texto telegráfico</p>
+            <p class="desc">
+              Biblioteca e demos de conjugação verbal em português do Brasil:
+              paradigmas a partir do infinitivo, análise de frases minimalistas
+              e correção de verbos — pensada para CAA, mas reutilizável em EdTech,
+              editores e pipelines locais.
+            </p>
+            <ul class="feature-list">
+              <li>
+                <span class="dot" aria-hidden="true"></span>
+                <div>
+                  <strong>Léxico <a href="https://github.com/LR-POR/MorphoBr"><u>MorphoBr</u></a></strong>
+                  <span>Dezenas de milhares de lemas e tempos/modos</span>
+                </div>
+              </li>
+              <li>
+                <span class="dot" aria-hidden="true"></span>
+                <div>
+                  <strong>Demos no browser</strong>
+                  <span>Paradigma verbal, fluxo CAA e prancha pictográfica</span>
+                </div>
+              </li>
+              <li>
+                <span class="dot" aria-hidden="true"></span>
+                <div>
+                  <strong>Núcleo isolado</strong>
+                  <span><code>conjugai-core</code> empacotável sem a UI</span>
+                </div>
+              </li>
+            </ul>
+            <div class="product-actions">
+              <a class="btn btn-coral" href="https://aac-ai-lab.github.io/conjug.ai" target="_blank" rel="noopener noreferrer">Abrir demo</a>
+              <a class="btn btn-secondary" href="https://github.com/aac-ai-lab/conjug.ai" target="_blank" rel="noopener noreferrer">Código</a>
+            </div>
+          </div>
+          <div class="product-panel alt" aria-hidden="true">
+            <div>
+              <div class="panel-label">Telegráfico → flexão</div>
+              <div class="panel-example">
+                <span class="from">nós ir escola ontem</span><br>
+                <span class="to">Nós fomos à escola ontem.</span>
+              </div>
+            </div>
+            <p class="panel-meta">Demo pública · GitHub Pages</p>
+          </div>
+        </article>
+
+        <div class="catalog" aria-label="Outros recursos do laboratório">
+          <a href="https://github.com/aac-ai-lab/tele-childes" target="_blank" rel="noopener noreferrer">
+            <h4>DTS-AAC</h4>
+            <p>Dataset de síntese telegráfica para Comunicação Aumentativa e Alternativa.</p>
+          </a>
+          <a href="https://github.com/aac-ai-lab/ets" target="_blank" rel="noopener noreferrer">
+            <h4>ETS</h4>
+            <p>Modelo para expansão automática de frases telegráficas.</p>
+          </a>
+          <a href="https://github.com/aac-ai-lab/e2t" target="_blank" rel="noopener noreferrer">
+            <h4>e2t</h4>
+            <p>Emoji to Telegraphic — ponte entre emoji e texto telegráfico.</p>
+          </a>
+          <a href="https://github.com/aac-ai-lab/n2t" target="_blank" rel="noopener noreferrer">
+            <h4>TeleTransform</h4>
+            <p>Transformação de texto natural para forma telegráfica (n2t).</p>
+          </a>
+          <a href="https://github.com/aac-ai-lab/t2n" target="_blank" rel="noopener noreferrer">
+            <h4>NaturalTransform</h4>
+            <p>Caminho inverso: telegráfico para linguagem natural (t2n).</p>
+          </a>
+          <a href="https://github.com/aac-ai-lab/p2s" target="_blank" rel="noopener noreferrer">
+            <h4>PictorTransform</h4>
+            <p>Pictogramas para sentença — ponte visual ↔ texto (p2s).</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section contact" aria-labelledby="contato-titulo">
+      <div class="container">
+        <div class="contact-box">
+          <div>
+            <h2 id="contato-titulo">Fale connosco</h2>
+            <p>
+              Tem dúvidas sobre as ferramentas, quer colaborar em pesquisa
+              ou integrar um dos motores na sua solução de CAA?
+              O ponto de partida é a organização no GitHub.
+            </p>
+            <a class="btn btn-primary" href="https://github.com/aac-ai-lab" target="_blank" rel="noopener noreferrer">
+              github.com/aac-ai-lab
+            </a>
+          </div>
+          <aside class="contact-aside">
+            <strong>AAC AI Lab</strong>
+            <span>Alternative Augmentative Communication and Artificial Intelligence Laboratory</span>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="ano"></span> AAC AI Lab. Código e demos sob as licenças de cada repositório.</p>
+      <p><a href="https://github.com/aac-ai-lab" target="_blank" rel="noopener noreferrer">github.com/aac-ai-lab</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
